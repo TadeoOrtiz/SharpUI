@@ -1,0 +1,6 @@
+<Flex>
+  <RawView Height="200" Width="250" BackgroundColor="Brown">
+  </RawView>
+  <RawView Height="200" Width="250" BackgroundColor="White">
+  </RawView>
+</Flex>
