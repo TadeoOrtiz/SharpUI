@@ -1,0 +1,30 @@
+---
+private readonly Signal<int> count = new(0);
+
+public void Increment() => count.Value++;
+public void Decrement() => count.Value--;
+public void Reset() => count.Value = 0;
+
+// Hook de ciclo de vida: se llama al final de CreateComponent().
+partial void OnCreated()
+{
+    new Effect(() =>
+    {
+        value.text = $"Valor: {count.Value}";
+        value.textColor = count.Value switch
+        {
+            > 0 => new SKColor(0x4A, 0xDE, 0x80),
+            < 0 => new SKColor(0xF8, 0x71, 0x71),
+            _ => SKColors.White,
+        };
+    });
+}
+---
+<Flex display="Column" spacing=12 padding=20 backgroundColor="#1E293B" cornerRadius=12>
+  <Label id="value" text="Valor: 0" fontSize=40 textColor="#FFFFFF" />
+  <Flex display="Row" spacing=12 stretchChildren=false>
+    <Button text="-" width=56 height=40 backgroundColor="#EF4444" textColor="#FFFFFF" OnClick={Decrement} />
+    <Button text="+" width=56 height=40 backgroundColor="#22C55E" textColor="#FFFFFF" OnClick={Increment} />
+    <Button text="Reset" width=96 height=40 backgroundColor="#64748B" textColor="#FFFFFF" OnClick={Reset} />
+  </Flex>
+</Flex>

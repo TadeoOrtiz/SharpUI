@@ -1,6 +1,19 @@
-<Flex>
-  <RawView Height="200" Width="250" BackgroundColor="Brown">
-  </RawView>
-  <RawView Height="200" Width="250" BackgroundColor="White">
-  </RawView>
-</Flex>
+<ThemeProvider>
+  <Flex display="Column" spacing=16 padding=20 flexGrow="1">
+    <Flex display="Row" spacing=12 backgroundColor="#FFFFFF" cornerRadius=12 padding=16>
+      <Label text="SharpUI Playground" fontSize=24 />
+    </Flex>
+
+    <Flex display="Row" spacing=16 flexGrow="1">
+      <Sidebar />
+      <Flex display="Column" flexGrow="1" spacing=16>
+        <CounterPanel />
+        <Flex display="Column" flexGrow="1" spacing=8 backgroundColor="#FFFFFF" cornerRadius=12 padding=16>
+          <Label text="Panel de contenido" fontSize=18 />
+          <Label text="Prueba los botones del menú y del contador." fontSize=14 />
+          <Label text="El valor se recalcula con señales y efectos." fontSize=14 />
+        </Flex>
+      </Flex>
+    </Flex>
+  </Flex>
+</ThemeProvider>

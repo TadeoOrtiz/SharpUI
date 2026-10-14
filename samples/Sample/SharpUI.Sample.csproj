@@ -1,8 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Core\SharpUI.Core.csproj" />
-    <ProjectReference Include="..\..\src\Components\SharpUI.Components.csproj" />
+    <ProjectReference Include="..\..\src\SharpUI.Core\SharpUI.Core.csproj" />
+    <ProjectReference Include="..\..\src\SharpUI.Reactive\SharpUI.Reactive.csproj" />
+    <ProjectReference Include="..\..\src\SharpUI.Theme\SharpUI.Theme.csproj" />
+    <ProjectReference Include="..\..\src\SharpUI.Windowing\SharpUI.Windowing.csproj" />
     <ProjectReference Include="..\..\src\Generators\SharpUI.Generators.csproj"
       OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 
@@ -13,6 +15,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
     <Nullable>enable</Nullable>
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>

@@ -1,0 +1,10 @@
+---
+// Aquí puedes poner propiedades o lógica de C# directamente
+public string Titulo { get; set; }
+
+
+---
+
+<Flex display="Column">
+  <Label text={Titulo} fontSize=20 backgroundColor="Brown" />
+</Flex>

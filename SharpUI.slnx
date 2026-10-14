@@ -1,6 +1,8 @@
 <Solution>
-  <Project Path="src/Core/SharpUI.Core.csproj" />
-  <Project Path="samples/Sample/SharpUI.Sample.csproj" />
-  <Project Path="src/Components/SharpUI.Components.csproj" />
+  <Project Path="src/SharpUI.Core/SharpUI.Core.csproj" />
+  <Project Path="src/SharpUI.Reactive/SharpUI.Reactive.csproj" />
+  <Project Path="src/SharpUI.Theme/SharpUI.Theme.csproj" />
+  <Project Path="src/SharpUI.Windowing/SharpUI.Windowing.csproj" />
   <Project Path="src/Generators/SharpUI.Generators.csproj" />
+  <Project Path="samples/Sample/SharpUI.Sample.csproj" />
 </Solution>

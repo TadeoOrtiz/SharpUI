@@ -1,0 +1,10 @@
+---
+public string Section { get; set; } = "Menú";
+---
+<Flex display="Column" width=200 spacing=8 backgroundColor="#FFFFFF" cornerRadius=12 padding=16>
+  <Label text={Section} fontSize=18 />
+  <Button text="Inicio" backgroundColor="#2563EB" textColor="#FFFFFF" />
+  <Button text="Explorar" backgroundColor="#F1F5F9" textColor="#0F172A" />
+  <Button text="Ajustes" backgroundColor="#F1F5F9" textColor="#0F172A" />
+  <Button text="Salir" backgroundColor="#EF4444" textColor="#FFFFFF" />
+</Flex>

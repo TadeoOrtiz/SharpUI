@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SharpUI.Core\SharpUI.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Silk.NET.Input" Version="2.23.0" />
     <PackageReference Include="Silk.NET.Maths" Version="2.23.0" />
+    <PackageReference Include="Silk.NET.OpenGL" Version="2.23.0" />
+    <PackageReference Include="Silk.NET.Windowing" Version="2.23.0" />
     <PackageReference Include="SkiaSharp" Version="4.153.1" />
   </ItemGroup>
 
